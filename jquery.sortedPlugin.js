@@ -72,8 +72,8 @@
       $(selectItem).html(newArray);
     }
 
-    return function(){
-      context.each(make);
+    return {
+      sort: function(){context.each(make);}
     }
   };
 

@@ -6,7 +6,7 @@ $(function () {
   });
 
   $('#oneSort').click(function () {
-    plugin1();
+    plugin1.sort();
   });
 
   var plugin2 = $('#sortedSelect').sortedPlugin({
@@ -16,7 +16,7 @@ $(function () {
   });
 
   $('#twoSort').click(function () {
-    plugin2();
+    plugin2.sort();
   });
 
 });
