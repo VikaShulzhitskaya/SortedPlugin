@@ -8,6 +8,8 @@
       dataType: '(int,string)'
     }, options);
 
+    var context = this;
+
     function map(arr, func) {
       var returnedArray = [];
 
@@ -70,7 +72,9 @@
       $(selectItem).html(newArray);
     }
 
-    return this.each(make);
+    return function(){
+      context.each(make);
+    }
   };
 
 })(jQuery);
